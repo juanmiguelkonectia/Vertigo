@@ -60,8 +60,6 @@ El propósito de este simulador es **emular la pureza mecánica** del proceso an
 
 ## 🚀 Cómo usarlo (Ejemplos)
 
-![1778946662367](image/readme/1778946662367.png)
-
 Para obtener el **"Óvalo de Saul Bass"** (relación de aspecto 1.25) con la densidad característica del cartel, utiliza los siguientes parámetros en el simulador o impórtalos mediante un archivo de configuración:
 
 ```
@@ -77,7 +75,7 @@ omega = 0.1            # Motor de la plataforma (Velocidad de giro)
 
 ## 📄 Licencia
 
-Este proyecto se distribuye bajo la licencia  **MIT** , permitiendo su uso libre para fines educativos, artísticos y de investigación sobre la historia del diseño computacional.
+**Este proyecto se distribuye bajo la ** **Licencia MIT,** permitiendo su uso libre para fines educativos, artísticos y de investigación sobre la historia del diseño computacional.. El código es abierto, pero se requiere el reconocimiento explícito del autor mencionado en la sección de créditos en cualquier derivado o uso público del mismo.
 
 ---
 
