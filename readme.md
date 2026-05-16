@@ -46,7 +46,7 @@ Para ejecutar este simulador, necesitarás:
 
 El núcleo del simulador se encuentra en `vertigo.py`. Puedes ajustar los parámetros mecánicos para obtener diferentes variaciones de la espiral.
 
-![1778943614925](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/envyJ/Documents/Accesos%20directos%20habituales/02_Curso%20programacion/Repositorios/Vertigo/image/readme/1778943614925.jpg)
+![1778946243144](image/readme/1778946243144.png)
 
 ## 📄 Licencia
 
