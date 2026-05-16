@@ -1,6 +1,4 @@
-![1778946028987](image/readme/1778946028987.png)
-
-# M-5 Vertigo Simulator
+![1778946028987](image/readme/1778946028987.png)M-5 Vertigo Simulator
 
 **M-5 Vertigo Simulator** es un motor de renderizado matemático desarrollado en **Python** que emula la lógica física y mecánica del  **Director de Tiro M-5** , la computadora analógica de la Segunda Guerra Mundial que **John Whitney** transformó para crear las icónicas espirales del cartel y la secuencia de créditos de la película *Vértigo* (1958) de Alfred Hitchcock.
 
@@ -18,7 +16,7 @@ Este "espirógrafo gigante" era un objeto de ingeniería pesada de  **400 kilos 
 
 El simulador digital traduce estos controles mecánicos a una interfaz funcional que permite manipular la geometría en tiempo real.
 
---Image of: --Interfaz del Simulador
+![1778946897441](image/readme/1778946897441.png)
 *Captura de la interfaz de control con visualización de la malla de interferencia generada por el simulador.*
 
 ## 🎯 Objetivo del Proyecto
