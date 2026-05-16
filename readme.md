@@ -76,7 +76,8 @@ omega = 0.1            # Motor de la plataforma (Velocidad de giro)
 
 ## 📄 Licencia
 
-**Este proyecto se distribuye bajo la ** **Licencia MIT,** permitiendo su uso libre para fines educativos, artísticos y de investigación sobre la historia del diseño computacional.. El código es abierto, pero se requiere el reconocimiento explícito del autor mencionado en la sección de créditos en cualquier derivado o uso público del mismo.
+Este proyecto está bajo la licencia [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.es). Puedes compartir y adaptar el contenido siempre que des crédito y **no lo utilices con fines comerciales**.
+Permitiendo su uso libre para fines educativos, artísticos y de investigación sobre la historia del diseño computacional.. El código es abierto, pero se requiere el reconocimiento explícito del autor mencionado en la sección de créditos en cualquier derivado o uso público del mismo.
 
 ---
 
