@@ -1,0 +1,48 @@
+py -3 -m venv .venv (crrear el entorno)
+
+.venv\Scripts\activate (activar .venv)
+
+
+pip install matplotlib numpy
+
+
+python dibujo.py
+
+
+
+
+
+pip install Flask (Instalación de FLASK Framework)
+
+pip install -r requirements.txt
+
+Flask --app app run (Ejecutar aplicación)
+
+Ctrl + C => Cerrar aplicación
+
+cls => Limpiar terminal
+
+http://127.0.0.1:5000/logout  para cerrar sesion
+
+
+python test_agenda.py
+
+git reset --soft HEAD~1    -  da patras un commit
+
+
+modificar en despliegue:
+if __name__ == '__main__':
+app.run(host='0.0.0.0', port=5001)
+
+
+python app.py
+
+un cambio para detectarlos
+
+
+pip install pytest  - instala el motor de pruebas
+
+python -m pytest - para ejecutar los test
+
+python -m pytest test_operaciones.py  - para probar las operaciones
+
