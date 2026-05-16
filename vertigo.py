@@ -184,7 +184,10 @@ def exportar(event):
     timestamp = datetime.now().strftime("%Y%m%dd_%H%M")
     nombre_base = f"resultado_M5_{timestamp}"
     
-    plt.savefig(f"{nombre_base}.svg", format='svg', bbox_inches='tight', pad_inches=0)
+    # Se extrae la caja delimitadora del ax (la figura) para omitir la botonera y los deslizadores
+    extent = ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted())
+    # MODIFICACIÓN ESTRICTA: Añadido dpi=300 para que nuestro botón exporte en alta resolución
+    plt.savefig(f"{nombre_base}.svg", format='svg', bbox_inches=extent, pad_inches=0, dpi=300)
     
     m_left = fig.subplotpars.left
     m_right = fig.subplotpars.right
@@ -213,7 +216,7 @@ def exportar(event):
         f.write(f"Espacio Alto (hspace)      : {m_hspace:.5f} -> Separación vertical entre placas expuestas.\n")
         f.write("\nConfiguración guardada correctamente de forma permanente.")
     
-    print(f"Archivos '{nombre_base}.svg' e informe guardados correctamente.")
+    print(f"Archivos '{nombre_base}.svg' (solo gráfico a 300 DPI) e informe guardados correctamente.")
 
 def importar(event):
     import os
@@ -298,6 +301,17 @@ btn_import.on_clicked(importar)
 ax_export = plt.axes([0.67, 0.02, 0.22, 0.035])
 btn_export = Button(ax_export, 'EXPORTAR RESULTADOS', color='lightgray', hovercolor='skyblue')
 btn_export.on_clicked(exportar)
+
+# --- INTERCEPCIÓN DEL BACKEND NATIVO (CON ALTA RESOLUCIÓN INCLUIDA) ---
+orig_savefig = fig.savefig
+def custom_savefig(*args, **kwargs):
+    # Forzar el recorte estricto del gráfico
+    kwargs['bbox_inches'] = ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted())
+    kwargs['pad_inches'] = 0
+    # MODIFICACIÓN ESTRICTA: Añadido dpi=300 para forzar la alta resolución en png/jpg desde el disquete nativo
+    kwargs['dpi'] = 300
+    return orig_savefig(*args, **kwargs)
+fig.savefig = custom_savefig
 
 # Inicialización y renderizado
 actualizar()
