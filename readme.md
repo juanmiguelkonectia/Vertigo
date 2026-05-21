@@ -19,9 +19,10 @@ El simulador digital traduce estos controles mecánicos a una interfaz funcional
 
 ![1778946897441](image/readme/1778946897441.png)
 *Captura de la interfaz de control con visualización de la malla de interferencia generada por el simulador.*
-
-
-<img src="image/readme/muestra.gif" alt="Video de la aplicacion" width="500" />
+---
+<center>
+  <img src="image/readme/muestra.gif" alt="Video de la aplicacion" width="400" />
+</center>
 *Video de que resultados se pueden obtener con el simulador.*
 
 ## 🎯 Objetivo del Proyecto
