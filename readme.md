@@ -17,6 +17,8 @@ Este "espirógrafo gigante" era un objeto de ingeniería pesada de  **400 kilos 
 
 El simulador digital traduce estos controles mecánicos a una interfaz funcional que permite manipular la geometría en tiempo real.
 
+![Video de la aplicacion](image/readme/muestra.gif)
+
 ![1778946897441](image/readme/1778946897441.png)
 *Captura de la interfaz de control con visualización de la malla de interferencia generada por el simulador.*
 
